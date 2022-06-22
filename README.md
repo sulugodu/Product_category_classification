@@ -19,6 +19,7 @@ packages as below.
 **Project description:**
 
 **Preparation of Training data  and Exploratory data analysis**
+
 Steps involved for data pre-processing.
 
 1. data cleaning
