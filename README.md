@@ -77,15 +77,14 @@ Product API end point will be running at `http://localhost:5000/products`.
 
 example_input_data 
 
-payload = {'input_data': pd.DataFrame({'id': [<product id>],'main_text': [<main_text>], "add_text":[<add_text>],"manufacturer":[<manufacturer>]}).to_json(orient='index')}
+`payload = {'input_data': pd.DataFrame({'id': [<product id>],'main_text': [<main_text>], "add_text":[<add_text>],"manufacturer":[<manufacturer>]}).to_json(orient='index')}`
 
 **Response format**
 
-`result: {'prediction': <product id>:<product category> , 'status': <status
- message>}`
+`result: {'prediction': <product id>:<product category> , 'status': <status message>}`
 
-Product id is used as a reference for mapping the predictions results.
-Request data is validated and verified before processing.
+Product id is used as a reference for mapping the predictions results. \
+Request data is validated and verified before processing. \
 Depending of prediction results different status message is sent as a response.
 
 Different status messages are mentioned below
@@ -97,8 +96,7 @@ status='Error in the input data': error in the request data.
 
 **Testing the api:** 
 
-Run the `Testing the Product Api Server` cell in the jupyter notebook `training
-.ipynb` for testing the api end point.
+Run the `Testing the Product Api Server` cell in the jupyter notebook `training.ipynb` for testing the api end point.
 
 
 **Unit test for testing the api end point:**  `tests\test_product.py` 
