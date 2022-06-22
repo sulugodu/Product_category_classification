@@ -75,9 +75,9 @@ Product API end point will be running at `http://localhost:5000/products`.
 
 **Request format**
 
-example_input_data = 
-payload = {'input_data': pd.DataFrame({'id': [<product id>],'main_text
-': [<main_text>], "add_text":[<add_text>],"manufacturer":[<manufacturer>]}).to_json(orient='index')}
+example_input_data 
+
+payload = {'input_data': pd.DataFrame({'id': [<product id>],'main_text': [<main_text>], "add_text":[<add_text>],"manufacturer":[<manufacturer>]}).to_json(orient='index')}
 
 **Response format**
 
