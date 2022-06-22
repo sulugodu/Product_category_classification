@@ -1,5 +1,7 @@
 Description
  
+Author: Mahesh Sulugodu Manjunatha
+
 Machine learning project for product category classification. 
 
 
