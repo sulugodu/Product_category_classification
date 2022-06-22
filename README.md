@@ -90,9 +90,9 @@ Depending of prediction results different status message is sent as a response.
 
 Different status messages are mentioned below
 
-status='OK': if the model predicts the product category successfully
-status='Error in the service': exception in the model prediction
-status='Error in the input data': error in the request data
+status='OK': if the model predicts the product category successfully. \ 
+status='Error in the service': exception in the model prediction. \
+status='Error in the input data': error in the request data. \
 
 
 **Testing the api:** 
@@ -107,15 +107,14 @@ Run `pytest`
 
 **Python packages description**
 
-`src` : Contains all the essential scripts for building the api server.
-`tests` : Unit test scripts for testing api endpoint.
+`src` : Contains all the essential scripts for building the api server.\
+`tests` : Unit test scripts for testing api endpoint.\
 `trained_model`: contains a pickle trained model.
 
 **Python module description**
 
-`src\api.py` : Contains all the essential functions for building the api
- server.
-`src\model.py` : Contains functions for loading the pickle model.
-`src\pre_processing.py` : Pre-processing pipeline for training..
+`src\api.py` : Contains all the essential functions for building the api server. \
+`src\model.py` : Contains functions for loading the pickle model.\
+`src\pre_processing.py` : Pre-processing pipeline for training..\
 `src\utils.py` : Util function for RESTAPI.
  
