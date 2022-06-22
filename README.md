@@ -89,7 +89,7 @@ Depending of prediction results different status message is sent as a response.
 
 Different status messages are mentioned below
 
-status='OK': if the model predicts the product category successfully.\ 
+status='OK': if the model predicts the product category successfully.\
 status='Error in the service': exception in the model prediction.\
 status='Error in the input data': error in the request data. 
 
