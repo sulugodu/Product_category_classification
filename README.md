@@ -92,7 +92,7 @@ Different status messages are mentioned below
 
 status='OK': if the model predicts the product category successfully. \ 
 status='Error in the service': exception in the model prediction. \
-status='Error in the input data': error in the request data. \
+status='Error in the input data': error in the request data. 
 
 
 **Testing the api:** 
@@ -116,5 +116,6 @@ Run `pytest`
 `src\api.py` : Contains all the essential functions for building the api server. \
 `src\model.py` : Contains functions for loading the pickle model.\
 `src\pre_processing.py` : Pre-processing pipeline for training..\
-`src\utils.py` : Util function for RESTAPI.
+`src\utils.py` : Util function for RESTAPI. \
+`training.ipynb` : Jupyter Notebook for training and data analysis.
  
