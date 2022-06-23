@@ -75,30 +75,28 @@ Product API end point will be running at `http://localhost:5000/products`.
 
 **Request format**
 
-example_input_data = 
-payload = {'input_data': pd.DataFrame({'id': [<product id>],'main_text
-': [<main_text>], "add_text":[<add_text>],"manufacturer":[<manufacturer>]}).to_json(orient='index')}
+example_input_data 
+
+`payload = {'input_data': pd.DataFrame({'id': [<product id>],'main_text': [<main_text>], "add_text":[<add_text>],"manufacturer":[<manufacturer>]}).to_json(orient='index')}`
 
 **Response format**
 
-`result: {'prediction': <product id>:<product category> , 'status': <status
- message>}`
+`result: {'prediction': <product id>:<product category> , 'status': <status message>}`
 
-Product id is used as a reference for mapping the predictions results.
-Request data is validated and verified before processing.
+Product id is used as a reference for mapping the predictions results. \
+Request data is validated and verified before processing. \
 Depending of prediction results different status message is sent as a response.
 
 Different status messages are mentioned below
 
-status='OK': if the model predicts the product category successfully
-status='Error in the service': exception in the model prediction
-status='Error in the input data': error in the request data
+status='OK': if the model predicts the product category successfully.\
+status='Error in the service': exception in the model prediction.\
+status='Error in the input data': error in the request data. 
 
 
 **Testing the api:** 
 
-Run the `Testing the Product Api Server` cell in the jupyter notebook `training
-.ipynb` for testing the api end point.
+Run the `Testing the Product Api Server` cell in the jupyter notebook `training.ipynb` for testing the api end point.
 
 
 **Unit test for testing the api end point:**  `tests\test_product.py` 
@@ -107,15 +105,15 @@ Run `pytest`
 
 **Python packages description**
 
-`src` : Contains all the essential scripts for building the api server.
-`tests` : Unit test scripts for testing api endpoint.
+`src` : Contains all the essential scripts for building the api server.\
+`tests` : Unit test scripts for testing api endpoint.\
 `trained_model`: contains a pickle trained model.
 
 **Python module description**
 
-`src\api.py` : Contains all the essential functions for building the api
- server.
-`src\model.py` : Contains functions for loading the pickle model.
-`src\pre_processing.py` : Pre-processing pipeline for training..
-`src\utils.py` : Util function for RESTAPI.
+`src\api.py` : Contains all the essential functions for building the api server. \
+`src\model.py` : Contains functions for loading the pickle model.\
+`src\pre_processing.py` : Pre-processing pipeline for training..\
+`src\utils.py` : Util function for RESTAPI. \
+`training.ipynb` : Jupyter Notebook for training and data analysis.
  
